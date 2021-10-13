@@ -1,0 +1,34 @@
+<form>
+  <div class="form-group">
+    AuthorName:
+    <select id="authorname">
+      {{#each data}}
+      <option>{{this.authorname}},{{this.author_id}}</option>
+      {{/each}}
+    </select>
+
+    {{!-- {{#each data}}
+     <input type="hidden" name="authorid" value="{{this.author_id}}">
+     {{/each}}
+      --}}
+  </div>
+  
+<div class="form-group">
+    ArticleName:
+    <input type="text"  id="articlename" maxlength="15" size="20">
+  </div>
+  
+   <div class="form-group">
+    DateOfPublish:
+    <input type="text" id="pdate" maxlength="10" size="10">
+  </div>
+
+  <div class="form-group">
+    ArticleText:
+    <TextArea type="text" class="form-control" id="articletext"></TextArea>
+  </div>
+
+ 
+
+  <button type="submit" id="publish" class="btn btn-primary">Publish</button>
+</form>

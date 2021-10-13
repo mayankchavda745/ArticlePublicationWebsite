@@ -1,0 +1,28 @@
+<table class="table table-bordered" margin-top="10px">
+  <thead>
+    <tr>
+      <th>S.No</th>
+      <th>Name</th>
+      <th>Message</th>
+      <th>Email</th>
+      <th>Mobileno</th>
+      <th>Gender</th>
+      <th>Update</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <td>{{this.id}}</td>
+      <td>{{this.fname}}{{this.lname}}</td>
+      <td>{{this.message}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.mobileno}}</td>
+      <td>{{this.gender}}</td>
+      <td><button><a href="/contactus/{{this.id}}">Edit</a></button></td>
+      <td><button><a href="/usermessage/{{this.id}}">Delete</a></button></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

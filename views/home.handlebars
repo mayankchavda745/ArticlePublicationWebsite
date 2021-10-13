@@ -1,0 +1,16 @@
+<table class="table table-bordered" margin-top="10px">
+  <thead>
+    <tr>
+      <th>Author Name</th>
+      <th>Article Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <td>{{this.authorname}}</td>
+      <td><a href="/article/{{this.article_id}}">{{this.articlename}}</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

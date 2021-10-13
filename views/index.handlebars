@@ -1,0 +1,26 @@
+{{!-- 
+     <h4>{{this.authorname}}</h4>
+    {{#each data as |value key|}}
+        <h5><a href="/article/{{this.article_id}}">{{authorname}}</a></h5> 
+        <p>{{key}}:{{value}}</p>
+    {{/each}} --}}
+{{!-- 
+{{#each name}}
+<p>{{.}}</p>
+{{/each}} --}}
+
+{{!-- {{#each list as |value key|}}
+    <p>{{key}}</p>
+    {{#each this.items}}
+    <p>{{this}}</p>
+    {{/each}}
+
+{{/each}} --}}
+
+{{#each name}}
+   
+    <h3>{{authorName}}</h3>
+    {{#each articles}}
+      <h6><a href="article/{{this.id}}">{{title}}</a></h6>  
+    {{/each}}
+{{/each}}
